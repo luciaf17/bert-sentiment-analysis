@@ -2,3 +2,4 @@
 venv/
 bertvenv/
 results/
+__pycache__/
