@@ -6,7 +6,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 app = Flask(__name__)
 
 # Cargar el modelo entrenado y el tokenizador
-model = BertForSequenceClassification.from_pretrained('./results/trained_model')
+model = BertForSequenceClassification.from_pretrained('luciaf17/my-bert-sentiment-model')
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Mover el modelo a la GPU si está disponible

@@ -41,3 +41,9 @@ Para evaluar el modelo entrenado en el conjunto de validación, puedes ejecutar 
 ## Resultados
 
 Los resultados del modelo entrenado se guardarán en la carpeta results/, incluyendo los checkpoints del modelo y cualquier métrica de rendimiento obtenida durante la evaluación.
+
+
+## Disponibilidad del modelo
+
+Se sube a Hugging Face para luego desplegarlo en Rendep app.
+
