@@ -1,6 +1,6 @@
 # BERT Sentiment Analysis
 
-Este proyecto implementa un modelo de **BERT** para la clasificación de titulares de noticias en tres categorías: **Bajó**, **Subió**, y **Neutral**. Utiliza la biblioteca **Hugging Face's Transformers** junto con **PyTorch** para el entrenamiento en una GPU **NVIDIA RTX 3070**.
+Este proyecto implementa un modelo de **BERT** para la clasificación de titulares de noticias en tres categorías: **Bajó**, **Subió**, y **Neutral**. Utiliza la biblioteca **Hugging Face's Transformers** junto con **PyTorch** para el entrenamiento en una GPU **NVIDIA RTX 3070**. Somos integrantes del grupo 8 del curso IA para Tecnologas con experiencia.
 
 ## Instalar las dependencias:
 Este proyecto utiliza PyTorch, transformers y otras librerías de NLP y machine learning. Todas las dependencias necesarias están listadas en el archivo requirements.txt.
@@ -45,5 +45,9 @@ Los resultados del modelo entrenado se guardarán en la carpeta results/, incluy
 
 ## Disponibilidad del modelo
 
-Se sube a Hugging Face para luego desplegarlo en Rendep app.
+Se sube a Hugging Face para luego desplegarlo en Render app.
+
+En este colab, podemos llamar a la API enviandole la noticia, y la misma devuelve una respuesta que funciona como indicador de: Compra, Venta o Neutral.
+
+https://colab.research.google.com/drive/10Q0iUZS5NAFr19sH1kJnlVyW2ED9zEmD#scrollTo=WVWcZrC_50Xa
 
