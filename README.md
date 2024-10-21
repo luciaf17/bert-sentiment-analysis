@@ -53,7 +53,7 @@ https://colab.research.google.com/drive/10Q0iUZS5NAFr19sH1kJnlVyW2ED9zEmD#scroll
 
 # API de Predicción de Sentimientos Financieros
 
-## Esta API permite realizar predicciones de sentimiento financiero (Compra/Venta) utilizando un modelo de clasificación basado en BERT (o FinBERT). La API toma un texto (por ejemplo, un titular de noticia financiera) y devuelve si sugiere una acción de "Compra" o "Venta".
+Esta API permite realizar predicciones de sentimiento financiero (Compra/Venta) utilizando un modelo de clasificación basado en BERT. La API toma un texto (por ejemplo, un titular de noticia financiera) y devuelve si sugiere una acción de "Compra" o "Venta".
 
 ## Características del modelo:
 
@@ -67,23 +67,28 @@ La API está diseñada para recibir una solicitud POST con un texto, el cual es 
 
 ### Ejemplo de Uso:
 
-Endpoint: `/predict`
-Método HTTP: `POST`
-Formato de entrada: `JSON`
-URL: `"https://bert-sentiment-analysis.onrender.com/predict"`
-El parámetro clave debe ser text, que contiene el texto (por ejemplo, una noticia o titular).
-Respuesta: Un JSON que contiene la predicción entre "Compra" o "Venta".
-Solicitud:
-Envía una solicitud POST al endpoint `/predict` con el siguiente formato:
+-Endpoint: `/predict`
+
+-Método HTTP: `POST`
+
+-Formato de entrada: `JSON`
+
+-URL: `"https://bert-sentiment-analysis.onrender.com/predict"`
+
+-El parámetro clave debe ser text, que contiene el texto (por ejemplo, una noticia o titular).
+
+-Respuesta: Un JSON que contiene la predicción entre "Compra" o "Venta".
+
+-Solicitud: Envía una solicitud POST al endpoint `/predict` con el siguiente formato:
 
 ```json
 {
   "text": "El mercado de valores muestra una tendencia alcista en las acciones tecnológicas."
-}```
+}
 
 Respuesta:
 
 ```json
 {
   "prediction": "Compra"
-}```
+}
