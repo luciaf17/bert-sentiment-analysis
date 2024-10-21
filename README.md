@@ -65,6 +65,10 @@ Clasificación en dos categorías: Compra y Venta.
 
 La API está diseñada para recibir una solicitud POST con un texto, el cual es tokenizado y procesado por el modelo para devolver una predicción sobre el sentimiento de la noticia.
 
+## Frontend de ejemplo
+
+Puedes ver como funcionan las predicciones en la siguiente URL `https://bert-sentiment-analysis.streamlit.app/`
+
 ### Ejemplo de Uso:
 
 -Endpoint: `/predict`
