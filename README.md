@@ -88,7 +88,7 @@ La API está diseñada para recibir una solicitud POST con un texto, el cual es 
 
 Respuesta:
 
-```json
+json
 {
   "prediction": "Compra"
 }
