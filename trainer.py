@@ -45,7 +45,7 @@ train_dataset = SentimentDataset(train_encodings, train_labels)
 val_dataset = SentimentDataset(val_encodings, val_labels)
 
 # Cargar el modelo de BERT preentrenado y moverlo a la GPU si está disponible
-model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=3).to(device)
+model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2).to(device)
 
 # Configurar los argumentos del entrenamiento
 training_args = TrainingArguments(

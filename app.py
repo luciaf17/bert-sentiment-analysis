@@ -31,8 +31,8 @@ def predict():
         logits = outputs.logits
         predicted_class_id = torch.argmax(logits, dim=1).item()
     
-    # Devolver el resultado como JSON
-    classes = ["Venta", "Compra", "Neutral"]
+    # Devolver el resultado como JSON (solo dos clases: Venta y Compra)
+    classes = ["Venta", "Compra"]
     result = {'prediction': classes[predicted_class_id]}
     return jsonify(result)
 

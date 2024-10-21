@@ -37,7 +37,7 @@ class SentimentDataset(torch.utils.data.Dataset):
 val_dataset = SentimentDataset(val_encodings, val_labels)
 
 # Cargar el modelo previamente entrenado
-model = BertForSequenceClassification.from_pretrained('./results/trained_model', num_labels=3)
+model = BertForSequenceClassification.from_pretrained('./results/trained_model', num_labels=2, ignore_mismatched_sizes=True)
 
 # Crear el objeto Trainer (solo para evaluación)
 trainer = Trainer(
@@ -53,4 +53,4 @@ predictions = trainer.predict(val_dataset)
 preds = np.argmax(predictions.predictions, axis=1)
 
 # Mostrar el informe de clasificación
-print(classification_report(val_labels, preds, target_names=["Bajó", "Subió", "Neutral"]))
+print(classification_report(val_labels, preds, target_names=["Bajó", "Subió"]))
