@@ -1,6 +1,8 @@
 # BERT Sentiment Analysis
 
-Este proyecto implementa un modelo de **BERT** para la clasificación de titulares de noticias en tres categorías: **Bajó** y **Subió**. Utiliza la biblioteca **Hugging Face's Transformers** junto con **PyTorch** para el entrenamiento. Somos integrantes del grupo 8 del curso IA para Tecnologas con experiencia.
+Este proyecto implementa un modelo de **BERT** para la clasificación de titulares de noticias en dos categorías: **Bajó** y **Subió**. Utiliza la biblioteca **Hugging Face's Transformers** junto con **PyTorch** para el entrenamiento. Somos integrantes del grupo 8 del curso IA para Tecnologas con experiencia.
+
+La idea es crear un indicador de Compra/Venta para el trading de acciones del mercado estadounidense.
 
 ## Instalar las dependencias:
 Este proyecto utiliza PyTorch, transformers y otras librerías de NLP y machine learning. Todas las dependencias necesarias están listadas en el archivo requirements.txt.
