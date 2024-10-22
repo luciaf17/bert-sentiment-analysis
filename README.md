@@ -96,3 +96,10 @@ json
 {
   "prediction": "Compra"
 }
+
+Si se desea trabajar de manera local, es necesario cambiar en el archivo de streamlit_app.py por la url local: `"http://127.0.0.1:5000/predict"`.
+Los comandos para ejecutar la API y el Front so los siguientes:
+
+`py app.py`
+
+`streamlit run streamlit_app.py`
